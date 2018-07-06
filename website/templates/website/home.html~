@@ -1,0 +1,8 @@
+<h3>
+employee
+</h3>
+<ul>
+{% for e in employees %}
+<li><a href="detail.html">{{e.fname}}</a></li>
+{% endfor %}
+</ul>
