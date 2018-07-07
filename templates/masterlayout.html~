@@ -1,0 +1,11 @@
+<html>
+<title>{%block title%}{%endblock%}</title>
+<body>
+<h1>this is header</h1>
+{%block container%}
+{%endblock%}
+<h1>this is footer</h1>
+
+</body>
+
+</html>

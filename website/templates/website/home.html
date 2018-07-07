@@ -1,8 +1,17 @@
+{% extends 'masterlayout.html' %}
+{%block title%}home{%endblock%}
+{%block container%}
 <h3>
 employee
 </h3>
+
 <ul>
+
 {% for e in employees %}
-<li><a href="detail/{{e.id}}">{{e.fname}}</a></li>
+<!---<li><a href="detail/{{e.id}}">{{e.fname}}</a></li>--->
+
+<li><a href="{%url 'website:detail' e.id%}">{{e.fname}}</a></li>
+
 {% endfor %}
 </ul>
+{%endblock%}
